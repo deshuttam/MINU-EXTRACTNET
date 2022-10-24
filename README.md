@@ -47,13 +47,16 @@ The repository includes:
 * Jupyter notebooks to visualize the minutiae extraction pipeline at every step.
 
 ### Citing
-@ARTICLE {10.1007/978-981-16-0507-9_5, Author="Deshpande, Uttam U. Deshpande"
-Editor="Santosh, K. C. and Gawali, Bharti",
-Title="MINU-EXTRACTNET: Automatic Latent Fingerprint Feature Extraction System Using Deep Convolutional Neural Network",
-Book Title="Recent Trends in Image Processing and Pattern Recognition",
-Year="2021",
-Publisher="Springer Singapore",
-Address="Singapore",
-Pages="44--56",
-ISBN="978-981-16-0507-9" }
+@inproceedings {10.1007/978-981-16-0507-9_5, 
+Author={Deshpande, Uttam U. Deshpande},
+Editor={Santosh, K. C. and Gawali, Bharti},
+Title={MINU-EXTRACTNET: Automatic Latent Fingerprint Feature Extraction System Using Deep Convolutional Neural Network},
+Book Title={Recent Trends in Image Processing and Pattern Recognition},
+Year={2021},
+Publisher={Springer Singapore},
+Address={Singapore},
+Pages={44--56},
+DOI={ https://doi.org/10.1007/978-981-16-0507-9_5 },
+ISBN={978-981-16-0507-9},
+}
 
