@@ -41,7 +41,23 @@ The precision-recall curves for FVC 2004 and NIST SD27 database by different sta
 
 The repository includes:
 
-* Source code of Minutiae Net which includes CoarseNet and FineNet.
-* Training code for FineNet and CoarseNet.
-* Pre-trained weights for FineNet and CoarseNet
-* Jupyter notebooks to visualize the minutiae detection pipeline at every step
+* Source code of MINU-EXTRACTNET.
+* Training code for MINU-EXTRACTNET.
+* Pre-trained weights for MINU-EXTRACTNET, FineNet and CoarseNet.
+* Jupyter notebooks to visualize the minutiae extraction pipeline at every step.
+
+### Citing
+@InProceedings{10.1007/978-981-16-0507-9_5,
+author="Deshpande, Uttam U.
+and Malemath, V. S.",
+editor="Santosh, K. C.
+and Gawali, Bharti",
+title="MINU-EXTRACTNET: Automatic Latent Fingerprint Feature Extraction System Using Deep Convolutional Neural Network",
+booktitle="Recent Trends in Image Processing and Pattern Recognition",
+year="2021",
+publisher="Springer Singapore",
+address="Singapore",
+pages="44--56",
+isbn="978-981-16-0507-9"
+}
+
