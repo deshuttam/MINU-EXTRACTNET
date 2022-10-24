@@ -60,3 +60,26 @@ DOI={ https://doi.org/10.1007/978-981-16-0507-9_5 },
 ISBN={978-981-16-0507-9},
 }
 
+
+### Contents
+1. Requirements: software
+2. Installation
+3. Demo
+4. Usage
+
+## Requirements: software
+`Python 2.7`, `Tensorflow 1.7.0`, `Keras 2.1.6`.
+
+## Installation
+To make life easier, use Anaconda for easy installation. Version using pip is similar.
+`conda install cv2, numpy, scipy, matplotlib, pydot, graphviz`
+
+Download models and put into Models folder.
+
+* MINU-EXTRACTNET: https://drive.google.com/file/d/1e-fvLhwvw8Sg1uVkM6oBT6QncWZgloap/view?usp=sharing
+
+* CoarseNet: https://drive.google.com/file/d/1bU3T-XQRlKy6C77e5eD-DOD_QlNlAIjR/view?usp=sharing
+
+* FineNet: https://drive.google.com/file/d/1rQw6hs-3hv_7WqJQ8ZYhJhi4laa-9qbY/view?usp=sharing
+
+
