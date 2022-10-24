@@ -82,4 +82,8 @@ Download models and put into Models folder.
 
 * FineNet: https://drive.google.com/file/d/1rQw6hs-3hv_7WqJQ8ZYhJhi4laa-9qbY/view?usp=sharing
 
+## Usage
+# MINU-EXTRACTNET
+`MINU-EXTRACTNET.ipynb` can be called to generate minutiae as well as masks and orientation.
+
 
