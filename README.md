@@ -11,17 +11,22 @@ By Uttam Deshpande et. al.,
 A Deep Convolutional Neural Network  (DCNN) model called “Minu-ExtractNet” performs pre-processing using “Pre-ProcessNet”. This model enhances the quality of the latent and produces the orientation information along with different segmentation masks. Later, pre-processed information is then used to extract the minutiae feature points using another CNN model called “ExtractNet”. This feature extractor model performs the image quality assessment to determine the threshold value to filter out spurious minutiae points. A dynamic thresholding algorithm is developed to achieve this goal.
 To refer to this paper: https://doi.org/10.1007/978-981-16-0507-9_5
 
+### Pre-ProcessNet: 
+A residual learning-based CNN model. It is a Robust image enhancement model that takes input as a fingerprint image and enhances the image for further operation. This model also generates orientation estimates and segmentation masks as output.
+
 ![image](https://user-images.githubusercontent.com/107185323/197522777-6b5991b8-8298-4074-9994-980655d3377f.png)
 
-
-
+Due to the lack of ground truth dataset, we generate weak labels from the approach used by Nguyen et.al. [5]. Pre-ProcessNet uses minutiae location and orientation generated from this method. These weak labels are used for training segmentation and orientation modules
 
 ![image](https://user-images.githubusercontent.com/107185323/197522845-bf57054a-ebc2-4799-955f-1075693f959c.png)
 
-
+### Pre-ProcessNet: 
+A residual learning-based CNN model. It is a Robust image enhancement model that takes input as a fingerprint image and enhances the image for further operation. This model also generates orientation estimates and segmentation masks as output.
 
 ![image](https://user-images.githubusercontent.com/107185323/197522897-1a7ab288-8cb3-4d25-bace-a15df0f09980.png)
 
+The confidence level of minutiae points as predicted by ExtractNet directly depends upon the quality of the image. ExtractNet extracts both true and spurious points that have to be filtered before passing it to further operation. The presence of a significant number of spurious points or lost true minutiae points affects the accuracy of the future matching process. Hence, an efficient filtering process has to be implemented. If a static thresholding mechanism is applied then true
+minutiae points will be filtered out. This is because the degraded image will detect a true minutia point with a lower confidence level.
 
 
 ![image](https://user-images.githubusercontent.com/107185323/197522970-d2ac88c0-5261-4e6f-ad6c-53cedf91571f.png)
