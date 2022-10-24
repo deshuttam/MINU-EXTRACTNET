@@ -20,8 +20,8 @@ Due to the lack of ground truth dataset, we generate weak labels from the approa
 
 ![image](https://user-images.githubusercontent.com/107185323/197522845-bf57054a-ebc2-4799-955f-1075693f959c.png)
 
-### Pre-ProcessNet: 
-A residual learning-based CNN model. It is a Robust image enhancement model that takes input as a fingerprint image and enhances the image for further operation. This model also generates orientation estimates and segmentation masks as output.
+### ExtractNet: 
+It’s a CNN based minutiae extractor model that takes the output of the robust image enhancement model as input and extracts feature points from the fingerprint image. Feature points could be ridge ending, bifurcation, core points, etc. The model gives output feature points as X and Y coordinates, the orientation angle θ, and the confidence score of each feature point.
 
 ![image](https://user-images.githubusercontent.com/107185323/197522897-1a7ab288-8cb3-4d25-bace-a15df0f09980.png)
 
@@ -37,3 +37,11 @@ The precision-recall curves for FVC 2004 and NIST SD27 database by different sta
 
 ![image](https://user-images.githubusercontent.com/107185323/197523104-714b2ffd-d315-4b57-a524-2fc9121f99bd.png)
 
+
+
+The repository includes:
+
+* Source code of Minutiae Net which includes CoarseNet and FineNet.
+* Training code for FineNet and CoarseNet.
+* Pre-trained weights for FineNet and CoarseNet
+* Jupyter notebooks to visualize the minutiae detection pipeline at every step
