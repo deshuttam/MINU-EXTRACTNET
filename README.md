@@ -25,18 +25,15 @@ A residual learning-based CNN model. It is a Robust image enhancement model that
 
 ![image](https://user-images.githubusercontent.com/107185323/197522897-1a7ab288-8cb3-4d25-bace-a15df0f09980.png)
 
-The confidence level of minutiae points as predicted by ExtractNet directly depends upon the quality of the image. ExtractNet extracts both true and spurious points that have to be filtered before passing it to further operation. The presence of a significant number of spurious points or lost true minutiae points affects the accuracy of the future matching process. Hence, an efficient filtering process has to be implemented. If a static thresholding mechanism is applied then true
-minutiae points will be filtered out. This is because the degraded image will detect a true minutia point with a lower confidence level.
-
+The confidence level of minutiae points as predicted by ExtractNet directly depends upon the quality of the image. ExtractNet extracts both true and spurious points that have to be filtered before passing it to further operation. The presence of a significant number of spurious points or lost true minutiae points affects the accuracy of the future matching process. Hence, an efficient filtering process has to be implemented. 
 
 ![image](https://user-images.githubusercontent.com/107185323/197522970-d2ac88c0-5261-4e6f-ad6c-53cedf91571f.png)
 
-
-
+A static thresholding mechanism is applied then true minutiae points will be filtered out. This is because the degraded image will detect a true minutia point with a lower confidence level. Hence to overcome these drawbacks we propose a dynamic thresholding algorithm.
 
 ![image](https://user-images.githubusercontent.com/107185323/197523031-ce380111-a7fe-4345-81fa-a9a181d10f76.png)
 
-
+The precision-recall curves for FVC 2004 and NIST SD27 database by different state-of-art work are shown in Fig. 6. The obtained results are found similar to the ground truth minutiae of FVC 2004 and NIST SD27 databases. The proposed work can work well with partial fingerprint images and images with noisy backgrounds.
 
 ![image](https://user-images.githubusercontent.com/107185323/197523104-714b2ffd-d315-4b57-a524-2fc9121f99bd.png)
 
